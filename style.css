@@ -1,0 +1,356 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #414037b2;
+  font-family: "Quintessential";
+}
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+h1 {
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 110%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+}
+h3 {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+}
+p {
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 7%;
+}
+p span {
+  font-style: italic;
+}
+a {
+  color: #414037b2;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 0%;
+  text-decoration-skip-ink: auto;
+}
+
+/* .container {
+  max-width: 1440px;
+} */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Užtikrina, kad navbar būtų virš kitų elementų */
+  background: #333;
+  color: white;
+}
+.header-bg {
+  width: 100%;
+  height: 40px;
+  background-color: #b7a37a;
+}
+.header-contacts a {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #414037b2;
+  text-decoration: none;
+  margin-left: 15px;
+  margin-right: 60px;
+}
+.navbar-bg {
+  background: linear-gradient(90.98deg, #ebe7dd 0.07%, #ffffff 99.93%);
+  position: relative;
+  min-height: 130px;
+}
+.tuscias {
+  height: 130px;
+}
+.logo {
+  height: 91px;
+  width: 80px;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.nav-link,
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  font-family: "Quintessential";
+  color: #414037b2;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  text-decoration-thickness: 0%;
+}
+.navbar-nav .nav-link.active {
+  text-decoration: underline;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: #414037b2;
+  text-decoration: underline;
+}
+
+.hero-section {
+  background-color: #c5c5c1;
+  background-image: url("img/hero.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: calc(50% + 300px) 40%;
+  margin-top: 170px;
+  height: 120vh;
+}
+
+.navbar-toggler {
+  border: none;
+  background-color: transparent;
+  padding: 20px 0;
+}
+.button-1 {
+  width: 311px;
+  height: 62px;
+  margin-top: 50px;
+  background: #f8d7c7;
+  border: 0.6px solid #ffffff;
+  box-shadow: -4px -4px 12px rgba(255, 255, 255, 0.5), 4px 4px 12px 4px rgba(255, 255, 255, 0.5);
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+}
+.button-1:hover,
+.button-2:hover {
+  background: #eccdbd;
+}
+.button-1:active,
+.button-2:active {
+  background: #f8d7c7;
+}
+.button-2 {
+  display: none;
+  position: absolute;
+  left: calc(50% - (380px / 2));
+  top: 102px;
+  width: 380px;
+  height: 68px;
+  background: #f8d7c7;
+  border: 0.6px solid #ffffff;
+  box-shadow: -4px -4px 12px rgba(255, 255, 255, 0.5), 4px 4px 12px 4px rgba(255, 255, 255, 0.5);
+  border-radius: 0px 0px 75px 75px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+}
+
+.s1,
+.s3 {
+  position: relative;
+  background: linear-gradient(90.98deg, #ebe7dd 0.07%, #ffffff 99.93%);
+}
+.s1-col2 {
+  padding-left: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.s1-col2 h3 {
+  margin-bottom: 30px;
+}
+.s1-col2 p {
+  margin-bottom: 20px;
+}
+.s1-col1 {
+  /* border: 2px solid black; */
+  padding: 0;
+}
+.img-container {
+  position: relative;
+  left: 20px;
+  top: -20px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /* border: 2px solid red; */
+}
+.img-container img {
+  object-fit: cover;
+  width: 140%;
+  height: 100%;
+  position: relative;
+}
+.s2 {
+  padding: 80px 0;
+}
+.s2 h3 {
+  margin-bottom: 30px;
+}
+.s4 {
+  padding: 80px 0;
+}
+.s4-col2 {
+  position: relative;
+}
+.s4-col1 {
+  padding-right: 10%;
+  align-content: center;
+  z-index: 2;
+}
+.s4-col1 h3 {
+  margin-bottom: 30px;
+}
+.s4-img1 {
+  position: absolute;
+  top: 10%;
+  right: 80%;
+  z-index: 1;
+  width: 70%;
+}
+.s4-img2 {
+  width: 100%;
+  object-fit: cover;
+  padding-left: 200px;
+}
+.s5 {
+  padding: 100px 0;
+  position: relative;
+  background: linear-gradient(92.11deg, #c6c6c1 0.01%, #c5c4bf 77.53%, #939390 99.99%);
+  justify-items: center;
+}
+.s5::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("img/S5bg.png") no-repeat center;
+  background-size: 50%;
+  opacity: 0.7; /* PNG permatomumas */
+  pointer-events: none; /* Kad nesikištų į sąveiką su kitais elementais */
+}
+.s5 p {
+  font-family: "Open Sans";
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 5%;
+  text-align: center;
+  max-width: 495px;
+  padding: 20px;
+}
+
+@media screen and (max-width: 992px) {
+  h1 {
+    text-align: start;
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .header-contacts a {
+    margin-right: 30px;
+  }
+  .hero-text {
+    text-align: start;
+  }
+  .navbar-bg {
+    min-height: 80px;
+  }
+  .button-1 {
+    width: 186px;
+    height: 50px;
+  }
+  .button-2 {
+    top: 52px;
+  }
+  .hero-section {
+    background-position: calc(50% + 120px) 40%;
+    margin-top: 120px;
+    height: 100vh;
+  }
+  .navbar-bg {
+    min-height: 80px;
+  }
+  .button-2 {
+    top: 52px;
+  }
+  .hero-section {
+    margin-top: 120px;
+  }
+  .logo {
+    height: 62px;
+    position: absolute;
+    left: 50%;
+    padding: 0;
+    top: 10px;
+    transform: translateX(-50%);
+  }
+
+  /* S4 */
+
+  .s4 {
+    padding: 30px 0;
+  }
+  .s4 h3 {
+    margin-bottom: 30px;
+  }
+  .s1-col2 {
+    padding: 30px 10px;
+  }
+  .s4-col1 {
+    padding: 20px;
+  }
+  .s4-col2 {
+    padding: 10px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .s4-img1 {
+    position: absolute;
+    z-index: 1;
+    width: 50%;
+    left: -15%;
+  }
+  .s4-img2 {
+    position: relative;
+    right: 0;
+    width: 80%;
+    object-fit: cover;
+  }
+}
