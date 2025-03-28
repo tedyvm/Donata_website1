@@ -43,6 +43,6 @@ window.addEventListener("scroll", () => {
     document.querySelector(".s1img").style.left = `${yOffset / 2 - 150}px`;
     document.querySelector(".s2img").style.left = `${-(yOffset / 2) + 100}px`;
     document.querySelector(".scrollBg").style.backgroundPosition = `calc(50% + ${-40 - yOffset}px) 50%`;
-    document.querySelector(".s4-img2").style.left = `${(yOffset - 520) / 0.7}px`;
+    document.querySelector(".s4-img2").style.left = `${(yOffset - 380) / 2}px`;
   }
 });
