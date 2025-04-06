@@ -1,0 +1,98 @@
+.p1s1 {
+  background-color: white;
+  margin-top: 130px;
+}
+h2 {
+  font-family: "Quintessential";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+p, li{
+    font-family: 'Open Sans';
+font-weight: 300;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0%;
+color: #414037B2;
+}
+p{
+    margin-top: 0px;
+}
+.p3 {
+  font-family: "Great Vibes";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 5%;
+  text-align: center;
+}
+.img-container {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /* border: 2px solid red; */
+}
+.img-container img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.button-2 {
+  rotate: 270deg;
+  display: block;
+  left: -156px;
+}
+.p2s1-bg {
+  margin-top: 130px;
+  min-height: 600px;
+  background: url(/img/p2s1-bg.jpeg);
+  background-repeat: no-repeat;
+  background-position: 0% 35%;
+  background-size: cover;
+}
+.p2s2 {
+  padding: 0px 60px 100px 60px;
+  /* background: url('/img/p2s3-bg.png');
+    background-repeat: no-repeat;   
+    background-position-x: 100%;
+    background-position-y: 100%;
+    background-size: 50%; */
+}
+.p2s2c1 h2 {
+  margin-top: 56px;
+  margin-bottom: 30px;
+}
+.p2s2c1 p {
+  max-width: 800px;
+  margin-bottom: 35px;
+}
+.accordion-button {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 0%;
+  letter-spacing: 0%;
+  color: #414037b2;
+}
+.accordion-button:not(.collapsed) {
+  color: #414037b2;
+  background-color: white;
+  box-shadow: inset 0 0;
+}
+.accordion-item {
+  border: 1px solid #b7a37ab2;
+}
+.accordion-body{
+    padding: 0px;
+    margin: 0px;
+}
