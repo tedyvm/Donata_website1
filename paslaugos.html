@@ -17,16 +17,21 @@
   <body>
     <!-- header-section -->
     <div class="container-fluid px-0 header">
-      <button type="button" class="button-2">Registruokis čia</button>
+      <a href="https://reservationplus.com/experience/lt/0o0dpg/services"><button type="button" class="button-2">Registruokis čia</button></a>
       <!-- contact-line -->
       <div class="container-fluid align-content-center header-bg">
         <div class="container">
           <div class="row">
             <div class="col d-flex align-items-center justify-content-end header-contacts">
-              <img class="header-icons" src="/img/phone-h.png" alt="" />
+              <a href="tel:+370 678 41988"><img class="header-icons" src="/img/phone-h.png" alt="" /></a>
               <a href="tel:+370 678 41988" class="d-none d-lg-inline header-contact">+370 678 41988</a>
-              <a href=""><img class="header-icons" src="/img/facebook-h.png" alt="" /></a>
-              <a href=""><img class="header-icons" src="/img/insta-h.png" alt="" /></a>
+              <a
+                href="https://www.facebook.com/profile.php?id=100078644536157&mibextid=wwXIfr&rdid=nDL7tz7y4ShZZlxp&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1FeMRTgfCj%2F%3Fmibextid%3DwwXIfr#"
+                ><img class="header-icons" src="/img/facebook-h.png" alt=""
+              /></a>
+              <a href="https://www.instagram.com/donata.rutkute/?igsh=b3V0ZXlpMjJ4Nmh4#"
+                ><img class="header-icons" src="/img/insta-h.png" alt=""
+              /></a>
             </div>
           </div>
         </div>
@@ -433,8 +438,11 @@
           <div class="col-12 col-md-4 col-lg-2 p-4">
             <h4>Bendraukime:</h4>
             <div class="social-icons d-flex justify-content-center justify-content-md-start">
-              <a href=""><img src="/img/facbook.png" alt="" /></a>
-              <a href=""><img src="/img/insta.png" alt="" /></a>
+              <a
+                href="https://www.facebook.com/profile.php?id=100078644536157&mibextid=wwXIfr&rdid=nDL7tz7y4ShZZlxp&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1FeMRTgfCj%2F%3Fmibextid%3DwwXIfr#"
+                ><img src="/img/facbook.png" alt=""
+              /></a>
+              <a href="https://www.instagram.com/donata.rutkute/?igsh=b3V0ZXlpMjJ4Nmh4#"><img src="/img/insta.png" alt="" /></a>
             </div>
           </div>
           <div class="footer-contact col-12 col-md-6 col-lg-3 p-4">
@@ -466,7 +474,7 @@
               scrolling="no"
               marginheight="0"
               marginwidth="0"
-              src="https://maps.google.com/maps?width=100%25&amp;height=100%25&amp;hl=en&amp;q=+(E.V.%20Gro%C5%BEio%20meistrai)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2247.642377559947!2d21.12726577695401!3d55.7125877950878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e4db3aefc17eab%3A0x7113fdf769def6e8!2sKosmetolog%C4%97%20Donata!5e0!3m2!1slt!2slt!4v1744036940627!5m2!1slt!2slt"
             ></iframe>
           </div>
         </div>
@@ -477,75 +485,7 @@
         </div>
       </div>
     </div>
-    <script>
-      const accordion = document.getElementById('accordionFlushExample');
-      
-      accordion.addEventListener('shown.bs.collapse', function (event) {
-        const element = event.target; // Atskleistas elementas
-        
-        // Patikriname, ar elementas yra matomas viršuje
-        const rect = element.getBoundingClientRect();
-        const windowHeight = window.innerHeight;
-    
-        // Jei elementas nėra visiškai matomas viršuje (viršuje gali būti mažiau nei 150px)
-        if (rect.top < 0 || rect.top > windowHeight - 150) {
-          // Paslinkti į elementą su 150px offsetu
-          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          window.scrollBy(0, -250); // Paslinkti 150px aukščiau
-        }
-      });
-    </script>
-    <script>
-      const galleryScroll = document.getElementById("galleryScroll");
-      const originalItems = Array.from(galleryScroll.children);
-      let isDown = false;
-      let startX;
-      let scrollLeft;
-
-      // Drag to scroll
-      galleryScroll.addEventListener("mousedown", (e) => {
-        isDown = true;
-        galleryScroll.classList.add("active");
-        startX = e.pageX - galleryScroll.offsetLeft;
-        scrollLeft = galleryScroll.scrollLeft;
-      });
-
-      galleryScroll.addEventListener("mouseleave", () => {
-        isDown = false;
-      });
-
-      galleryScroll.addEventListener("mouseup", () => {
-        isDown = false;
-      });
-
-      galleryScroll.addEventListener("mousemove", (e) => {
-        if (!isDown) return;
-        e.preventDefault();
-        const x = e.pageX - galleryScroll.offsetLeft;
-        const walk = (x - startX) * 1;
-        galleryScroll.scrollLeft = scrollLeft - walk;
-      });
-
-      // Infinite clone
-      let cloneCooldown = false;
-
-      galleryScroll.addEventListener("scroll", () => {
-        const { scrollLeft, clientWidth, scrollWidth } = galleryScroll;
-
-        if (scrollLeft + clientWidth >= scrollWidth - clientWidth && !cloneCooldown) {
-          cloneCooldown = true;
-
-          originalItems.forEach((item) => {
-            const clone = item.cloneNode(true);
-            galleryScroll.appendChild(clone);
-          });
-
-          setTimeout(() => {
-            cloneCooldown = false;
-          }, 300);
-        }
-      });
-    </script>
+    <script src="/styles/paslaugos.js"></script>
     <!-- <script src="anim.js"></script> -->
     <script src="styles/bootstrap.bundle.js"></script>
   </body>
