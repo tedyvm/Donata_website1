@@ -393,10 +393,10 @@
     </div>
 
     <!-- Gallery -->
-    <div class="gallery-container" id="gallery">
-      <div class="gallery-scroll">
+    <div class="gallery-container">
+      <div class="gallery-scroll" id="galleryScroll">
         <div class="gallery-item"><img src="/img/gal1.jpeg" alt="" /></div>
-        <div class="gallery-item"><img src="/img/gal2.jpeg" alt="" /></div>
+        <div class="gallery-item img2"><img src="/img/gal2.jpeg" alt="" /></div>
         <div class="gallery-item"><img src="/img/gal3.jpeg" alt="" /></div>
         <div class="gallery-item"><img src="/img/gal4.jpeg" alt="" /></div>
         <div class="gallery-item"><img src="/img/gal5.jpeg" alt="" /></div>
@@ -478,54 +478,56 @@
       </div>
     </div>
     <script>
-        const slider = document.getElementById('gallery');
-        const galleryScroll = document.getElementById('galleryScroll');
-        let isDown = false;
-        let startX;
-        let scrollLeft;
-        
-        // Drag scroll
-        slider.addEventListener('mousedown', (e) => {
-          isDown = true;
-          startX = e.pageX - slider.offsetLeft;
-          scrollLeft = slider.scrollLeft;
-        });
-        
-        slider.addEventListener('mouseleave', () => {
-          isDown = false;
-        });
-        
-        slider.addEventListener('mouseup', () => {
-          isDown = false;
-        });
-        
-        slider.addEventListener('mousemove', (e) => {
-          if (!isDown) return;
-          e.preventDefault();
-          const x = e.pageX - slider.offsetLeft;
-          const walk = (x - startX) * 1.5;
-          slider.scrollLeft = scrollLeft - walk;
-        });
-        
-        // Infinite scroll cloning
-        function cloneItemsIfNeeded() {
-          const scrollWidth = galleryScroll.scrollWidth;
-          const clientWidth = slider.clientWidth;
-          const scrollLeft = slider.scrollLeft;
-        
-          // Jei artėjame prie pabaigos – klonuojam originalias nuotraukas
-          if (scrollLeft + clientWidth >= scrollWidth - clientWidth) {
-            const items = galleryScroll.querySelectorAll(".gallery-item");
-            items.forEach(item => {
-              const clone = item.cloneNode(true);
-              galleryScroll.appendChild(clone);
-            });
-          }
+      const galleryScroll = document.getElementById("galleryScroll");
+      const originalItems = Array.from(galleryScroll.children);
+      let isDown = false;
+      let startX;
+      let scrollLeft;
+
+      // Drag to scroll
+      galleryScroll.addEventListener("mousedown", (e) => {
+        isDown = true;
+        galleryScroll.classList.add("active");
+        startX = e.pageX - galleryScroll.offsetLeft;
+        scrollLeft = galleryScroll.scrollLeft;
+      });
+
+      galleryScroll.addEventListener("mouseleave", () => {
+        isDown = false;
+      });
+
+      galleryScroll.addEventListener("mouseup", () => {
+        isDown = false;
+      });
+
+      galleryScroll.addEventListener("mousemove", (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - galleryScroll.offsetLeft;
+        const walk = (x - startX) * 1;
+        galleryScroll.scrollLeft = scrollLeft - walk;
+      });
+
+      // Infinite clone
+      let cloneCooldown = false;
+
+      galleryScroll.addEventListener("scroll", () => {
+        const { scrollLeft, clientWidth, scrollWidth } = galleryScroll;
+
+        if (scrollLeft + clientWidth >= scrollWidth - clientWidth && !cloneCooldown) {
+          cloneCooldown = true;
+
+          originalItems.forEach((item) => {
+            const clone = item.cloneNode(true);
+            galleryScroll.appendChild(clone);
+          });
+
+          setTimeout(() => {
+            cloneCooldown = false;
+          }, 300);
         }
-        
-        // Tikrina scroll poziciją ir klonuoja jei reikia
-        slider.addEventListener('scroll', cloneItemsIfNeeded);
-        </script>
+      });
+    </script>
     <!-- <script src="anim.js"></script> -->
     <script src="styles/bootstrap.bundle.js"></script>
   </body>
