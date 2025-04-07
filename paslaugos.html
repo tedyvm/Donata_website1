@@ -478,6 +478,16 @@
       </div>
     </div>
     <script>
+      const accordion = document.getElementById('accordionFlushExample');
+      
+      accordion.addEventListener('shown.bs.collapse', function (event) {
+        // Kai atsiskleidžia koks nors elementas, paslinkti į jį ekraną
+        const element = event.target; // Atskleistas elementas
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        window.scrollBy(0, -50);
+      });
+    </script>
+    <script>
       const galleryScroll = document.getElementById("galleryScroll");
       const originalItems = Array.from(galleryScroll.children);
       let isDown = false;
