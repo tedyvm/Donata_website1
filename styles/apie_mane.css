@@ -11,16 +11,17 @@ h2 {
   text-transform: uppercase;
   margin-bottom: 30px;
 }
-p, li{
-    font-family: 'Open Sans';
-font-weight: 300;
-font-size: 16px;
-line-height: 150%;
-letter-spacing: 0%;
-color: #414037B2;
+p,
+li {
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #414037b2;
 }
-p{
-    margin-top: 0px;
+p {
+  margin-top: 0px;
 }
 .p3 {
   font-family: "Great Vibes";
@@ -48,18 +49,18 @@ p{
 .button-2 {
   rotate: 270deg;
   display: block;
-  left: -156px;
+  left: -157px;
 }
 .p2s1-bg {
   margin-top: 130px;
   min-height: 600px;
   background: url(/img/p2s1-bg.jpeg);
   background-repeat: no-repeat;
-  background-position: 0% 35%;
+  background-position: center 35%;
   background-size: cover;
 }
 .p2s2 {
-  padding: 0px 60px 100px 60px;
+  padding: 0px 60px 100px 80px;
   /* background: url('/img/p2s3-bg.png');
     background-repeat: no-repeat;   
     background-position-x: 100%;
@@ -72,7 +73,7 @@ p{
 }
 .p2s2c1 p {
   max-width: 800px;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 .accordion-button {
   padding: 0;
@@ -90,9 +91,68 @@ p{
   box-shadow: inset 0 0;
 }
 .accordion-item {
-  border: 1px solid #b7a37ab2;
+  border: none;
+  border-bottom: 1px solid #b7a37ab2;
 }
-.accordion-body{
-    padding: 0px;
-    margin: 0px;
+.accordion-body {
+  padding: 0px;
+  margin: 0px;
+}
+.gallery-container {
+    overflow: hidden;
+    cursor: grab;
+    position: relative;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .gallery-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .gallery-container:active {
+    cursor: grabbing;
+  }
+  
+  .gallery-scroll {
+    display: flex;
+    gap: 1px;
+    scroll-behavior: smooth;
+  }
+  
+  .gallery-item {
+    flex: 0 0 auto;
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    user-select: none;
+    pointer-events: none;
+  }
+@media screen and (max-width: 992px) {
+  .p2s2 {
+    padding: 0px 10px 100px 40px;
+  }
+  .p2s1-bg {
+    margin-top: 110px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  .button-2 {
+    rotate: 270deg;
+    display: block;
+    left: -105px;
+  }
 }

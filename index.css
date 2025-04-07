@@ -331,6 +331,17 @@ a {
   width: 19px;
   height: 19px;
 }
+.footer-copyright{
+  font-family: 'Open Sans';
+font-weight: 400;
+font-size: 12px;
+line-height: 120%;
+letter-spacing: 0%;
+text-align: center;
+color: #B7A37A;
+
+
+}
 @media screen and (max-width: 992px) {
   h1 {
     text-align: start;
