@@ -140,8 +140,9 @@ p {
   .p2s2 {
     padding: 0px 10px 100px 40px;
   }
-  .p2s1-bg {
+  .p2s1-bg, .p1s1 {
     margin-top: 110px;
+    padding: 0;
   }
   h2 {
     font-size: 32px;
