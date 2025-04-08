@@ -1,36 +1,25 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #414037e5;
+  font-family: "Quintessential";
+}
+.row > * {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* PAGE-1 apie-mane */
+
 .p1s1 {
   background-color: white;
   margin-top: 130px;
 }
-h2 {
-  font-family: "Quintessential";
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  text-transform: uppercase;
-  margin-bottom: 30px;
-}
-p,
-li {
-  font-family: "Open Sans";
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 150%;
-  letter-spacing: 0%;
-  color: #414037b2;
-}
 p {
   margin-top: 0px;
-}
-
-.p3 {
-  font-family: "Great Vibes";
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 120%;
-  letter-spacing: 5%;
-  text-align: center;
 }
 .img-container {
   position: relative;
@@ -46,6 +35,9 @@ p {
   width: 100%;
   height: 100%;
   position: relative;
+}
+.s1-col2 {
+  padding: 90px;
 }
 .button-2 {
   rotate: 270deg;
@@ -194,6 +186,9 @@ p {
   padding-top: 80px;
 }
 @media screen and (max-width: 992px) {
+  .s1-col2{
+    padding: 30px 10px 30px 50px;
+  }
   .p2s2 {
     padding: 0px 10px 100px 40px;
   }
@@ -201,12 +196,6 @@ p {
   .p1s1 {
     margin-top: 110px;
     padding: 0;
-  }
-  h2 {
-    font-size: 32px;
-  }
-  h4 {
-    font-size: 16px;
   }
   .button-2 {
     rotate: 270deg;

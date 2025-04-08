@@ -1,9 +1,9 @@
 const width = window.innerWidth;
 const height = window.innerHeight;
-console.log(`Langas: ${width}x${height}`);
+// console.log(`Langas: ${width}x${height}`);
 window.addEventListener("scroll", () => {
   const yOffset = window.scrollY / 5;
-  console.log(yOffset);
+  // console.log(yOffset);
 
   // LG ekranui
   if (width > 992) {

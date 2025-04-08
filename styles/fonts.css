@@ -1,0 +1,102 @@
+h1 {
+  color: #414037b2;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 110%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+}
+h2 {
+  color: #414037b2;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+h3 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 1%;
+  text-transform: uppercase;
+}
+p,
+li {
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+p.p2 {
+  color: #414037b2;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0%;
+}
+
+a {
+  color: #b7a37a;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 0%;
+  text-decoration-skip-ink: auto;
+}
+
+p.p3 {
+    color: #414037b2;
+  font-family: "Great Vibes";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 5%;
+  text-align: center;
+}
+.s5 p {
+  font-family: "Open Sans";
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 5%;
+  text-align: center;
+  max-width: 495px;
+  padding: 20px;
+}
+li {
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #414037b2;
+}
+@media screen and (max-width: 992px) {
+  h1 {
+    text-align: start;
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+}
