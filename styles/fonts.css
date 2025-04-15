@@ -30,6 +30,8 @@ li {
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0%;
+  margin: 0;
+  padding: 0;
 }
 p.p2 {
   color: #414037b2;
@@ -52,7 +54,7 @@ a {
 }
 
 p.p3 {
-    color: #414037b2;
+  color: #414037b2;
   font-family: "Great Vibes";
   font-weight: 400;
   font-size: 20px;

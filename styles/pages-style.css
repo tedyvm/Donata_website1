@@ -175,6 +175,7 @@ p {
 .spec {
   text-align: start;
   margin-bottom: 10px;
+  width: 80%;
 }
 .p4s1 {
   padding-top: 200px;
@@ -183,8 +184,9 @@ p {
   height: 436px;
   padding-top: 80px;
 }
+
 @media screen and (max-width: 992px) {
-  .s1-col2{
+  .s1-col2 {
     padding: 30px 10px 30px 50px;
   }
   .p2s2 {

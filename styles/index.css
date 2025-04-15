@@ -25,7 +25,9 @@ body {
 .scrollBg {
   transition: background-position 0.2s ease-out;
 }
-.s1img, .s2img, .s4-img2 {
+.s1img,
+.s2img,
+.s4-img2 {
   transition: left 0.2s ease-out;
 }
 .hero-text p {
