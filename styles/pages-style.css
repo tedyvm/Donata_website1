@@ -184,6 +184,10 @@ p {
   height: 436px;
   padding-top: 80px;
 }
+.social-icons-big{
+  width: 40px;
+  height: 40px;
+}
 
 @media screen and (max-width: 992px) {
   .s1-col2 {
