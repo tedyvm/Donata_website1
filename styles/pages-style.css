@@ -165,6 +165,7 @@ p {
 }
 .kainPav {
   font-family: "Open Sans";
+  color: #414037b2;
   font-weight: 400;
   font-size: 20px;
   line-height: 150%;
@@ -184,7 +185,7 @@ p {
   height: 436px;
   padding-top: 80px;
 }
-.social-icons-big{
+.social-icons-big {
   width: 40px;
   height: 40px;
 }
